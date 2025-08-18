@@ -280,7 +280,7 @@ body {
 
 .kalu-magazine h2 {
   color: #fff;
-  font-size: clamp(3rem, 6vw, 6rem);
+  font-size: clamp(36px, 6vw, 128px);
   font-weight: 300;
   margin: 0;
   text-align: center;
@@ -394,7 +394,6 @@ footer {
   transform: rotate(45deg);
 }
 @media (max-width: 768px) {
-
   .icon {
     display: flex;
     gap: 16px;
