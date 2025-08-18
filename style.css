@@ -535,7 +535,7 @@ footer {
   }
 }
 /* کوچک‌تر از موبایل: یک ستون */
-@media (max-width: 420px) {
+/* @media (max-width: 420px) {
   .left-arow,
   .right-arrow {
     height: 36px;
@@ -599,4 +599,4 @@ footer {
     background-size: cover;
     transform: rotate(45deg);
   }
-}
+} */
