@@ -531,3 +531,32 @@ html {scrollbar-gutter:stable}
 @media(max-width:760px) {
  .craft-editorial .craft-picture {aspect-ratio:1/1;min-height:0;height:auto}
 }
+/* Give independent stories room to breathe while keeping each collection together. */
+@media(min-width:761px) {
+  .categories-section {padding-top:88px;padding-bottom:72px}
+  .signature-selection {padding-top:24px;padding-bottom:104px}
+  .campaign-royal .collection-copy {padding-top:72px;padding-bottom:72px}
+  .campaign-royal+.collection-products {padding-top:48px;padding-bottom:104px}
+  .collection-products .product-grid {row-gap:42px}
+  .craft-editorial .craft-copy {padding-top:64px;padding-bottom:64px}
+  .journal {padding-top:96px;padding-bottom:88px}
+  .passport-invite {padding-top:44px;padding-bottom:44px}
+  .service-section {padding-top:48px;padding-bottom:48px}
+}
+@media(max-width:760px) {
+  .hero-copy {padding-top:36px;padding-bottom:42px}
+  .categories-section {padding-top:72px;padding-bottom:48px}
+  .category-grid {row-gap:32px}
+  .signature-selection {padding-top:32px;padding-bottom:80px}
+  .section-heading {margin-bottom:28px}
+  .collection-products .product-grid {row-gap:36px}
+  .campaign-royal .collection-copy {padding-top:42px;padding-bottom:46px}
+  .campaign-royal+.collection-products {padding-top:40px;padding-bottom:80px}
+  .craft-editorial .craft-copy {padding-top:42px;padding-bottom:46px}
+  .journal {padding-top:72px;padding-bottom:64px}
+  .article-grid {row-gap:36px}
+  .passport-invite {padding-top:36px;padding-bottom:36px}
+  .passport-invite>.text-link {margin-top:20px}
+  .service-section {padding-top:40px;padding-bottom:44px;gap:30px}
+  .site-footer {padding-top:48px}
+}
