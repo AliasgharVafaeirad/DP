@@ -1,0 +1,5 @@
+AppData/
+*.log
+*.tmp
+.DS_Store
+output/*.zip
