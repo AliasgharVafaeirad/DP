@@ -604,3 +604,34 @@ html {scrollbar-gutter:stable}
  .journal-briefs p {font-size:11px;margin-bottom:4px}
  .journal-briefs a>div>span {display:none}
 }
+/* Homepage spacing: independent stories, related products and supporting content. */
+.home-page {
+  --space-story:144px;
+  --space-related:56px;
+  --space-copy:64px;
+  --space-support:96px;
+  --space-heading:40px;
+  --space-product-row:44px;
+}
+.home-page .categories-section {padding-top:var(--space-story);padding-bottom:var(--space-story)}
+.home-page .home-collection {margin-bottom:var(--space-story)}
+.home-page .home-collection .collection-copy {padding-top:var(--space-copy);padding-bottom:var(--space-copy)}
+.home-page .home-collection .collection-products {padding-top:var(--space-related);padding-bottom:0}
+.home-page .collection-products .product-grid {row-gap:var(--space-product-row)}
+.home-page .section-heading {margin-bottom:var(--space-heading)}
+.home-page .home-journal {padding-top:0;padding-bottom:var(--space-support)}
+.home-page .passport-invite {padding-top:var(--space-copy);padding-bottom:var(--space-copy);margin-bottom:var(--space-support)}
+.home-page .service-section {padding-top:var(--space-copy);padding-bottom:var(--space-copy)}
+@media(min-width:761px) and (max-width:1050px) {
+ .home-page {--space-story:128px;--space-copy:56px;--space-support:88px}
+}
+@media(max-width:760px) {
+ .home-page {
+   --space-story:120px;
+   --space-related:52px;
+   --space-copy:56px;
+   --space-support:88px;
+   --space-heading:36px;
+   --space-product-row:40px;
+ }
+}
