@@ -560,3 +560,47 @@ html {scrollbar-gutter:stable}
   .service-section {padding-top:40px;padding-bottom:44px;gap:30px}
   .site-footer {padding-top:48px}
 }
+/* Each collection is a single cover-and-products story. */
+.home-collection {margin:0 0 96px}
+.home-collection .collection-intro {display:grid;grid-template-columns:40% 60%;min-height:0}
+.home-collection .collection-copy {padding:64px 13%}
+.home-collection .collection-copy h2 {font-size:clamp(32px,3.2vw,48px);line-height:1.5;max-width:350px}
+.home-collection .collection-copy p {max-width:310px}
+.home-collection .collection-image {min-height:0;aspect-ratio:3/2}
+.home-collection .collection-image img {inset:0;width:100%;height:100%;object-fit:cover}
+.home-collection .signature-cover .collection-image img {object-position:56% center}
+.home-collection .collection-products {padding-top:40px;padding-bottom:0}
+.categories-section {padding-bottom:88px}
+.home-journal {padding-top:0;padding-bottom:72px}
+.journal-briefs {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.journal-briefs article {min-width:0}
+.journal-briefs a {display:grid;grid-template-columns:110px minmax(0,1fr);gap:18px;align-items:center;min-height:110px}
+.brief-image {aspect-ratio:1/1;overflow:hidden;background:var(--cream)}
+.brief-image img {height:100%;object-fit:cover;object-position:center 25%}
+.journal-briefs p {font-size:12px;color:var(--muted);margin-bottom:6px}
+.journal-briefs h3 {font-size:18px;line-height:1.65}
+.journal-briefs a>div>span {font-size:17px;display:block;margin-top:7px}
+@media(max-width:1050px) and (min-width:761px) {
+ .journal-briefs {gap:22px}
+ .journal-briefs a {grid-template-columns:76px minmax(0,1fr);gap:12px}
+ .journal-briefs h3 {font-size:16px}
+ .home-collection .collection-copy {padding:40px 10%}
+ .home-collection .collection-copy h2 {font-size:32px}
+ .home-collection .collection-image {min-height:410px}
+}
+@media(max-width:760px) {
+ .categories-section {padding-bottom:80px}
+ .home-collection {margin-bottom:80px}
+ .home-collection .collection-intro {display:flex;flex-direction:column-reverse;min-height:0}
+ .home-collection .collection-image {height:auto;min-height:0;aspect-ratio:4/5;width:100%}
+ .home-collection .signature-cover .collection-image {aspect-ratio:1/1}
+ .home-collection .collection-copy {padding:42px 22px 46px;width:100%}
+ .home-collection .collection-copy h2 {font-size:29px;max-width:290px}
+ .home-collection .collection-products {padding-top:36px;padding-bottom:0}
+ .home-journal {padding-top:0;padding-bottom:64px}
+ .journal-briefs {grid-template-columns:1fr;gap:18px}
+ .journal-briefs a {grid-template-columns:76px minmax(0,1fr);gap:16px;min-height:76px}
+ .journal-briefs h3 {font-size:16px;line-height:1.6}
+ .journal-briefs p {font-size:11px;margin-bottom:4px}
+ .journal-briefs a>div>span {display:none}
+}

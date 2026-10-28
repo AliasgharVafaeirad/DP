@@ -3,3 +3,4 @@ AppData/
 *.tmp
 .DS_Store
 output/*.zip
+.runtime-video/
